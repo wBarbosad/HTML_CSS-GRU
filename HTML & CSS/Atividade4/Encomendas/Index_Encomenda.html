@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pães e Bolos</title>
+</head>
+<body>
+    <h1>Pães e Bolos</h1>
+    <header>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Index_Encomenda.html">Encomendar Bolo</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Encomendar Bolo</h2>
+        <form get>
+            Nome: <input type="text" name="nome" placeholder="Informe o nome" maxlength="35" size="35" autofocus />
+            DDD ( <input type="text" name="DDD" placeholder="DDD" maxlength="2" size="2" /> )
+            Telefone: <input type="text" name="telefone" placeholder="Telefone" maxlength="10" size="10" />
+            <br /><br />
+            Sabor: <select name="sabor">
+                <option value="" selected disabled>Escolha...</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="frutas">Frutas</option>
+                <option value="misto">Misto</option>
+
+            </select>
+            
+            Tipo: <input type="radio" name="decoracao" value="simples"/> Simples
+                <input type="radio" name="decoracao" value="decorado"/> Decorado
+            
+            <br /><br />
+            Tamanho: <input type="number" name="tamanho" min="1" max="10"/>kg
+             <input type="checkbox" name="diet"/>Diet?
+
+             <br /><br />
+
+             Observações: <br />
+                <textarea name="observacao"  cols="30" rows="3" placeholder="Observação sobre o Pedido"></textarea>
+
+            <br /><br />
+
+             <button type="submit">Enviar Pedido</button>
+             <button type="reset">Limpar</button>
+        </form>
+    </main>
+    
+</body>
+</html>
